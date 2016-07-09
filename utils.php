@@ -45,15 +45,15 @@ function sendEmail(){
         $mail->isSMTP();
         $mail->Host = 'smtp.qq.com';
         $mail->SMTPAuth = true;
-        $mail->Username = "75124771@qq.com";
-        $mail->Password = "75124771@qq.cnn";
+        $mail->Username = "7512477*@qq.com";
+        $mail->Password = "******";
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
         $mail->CharSet = "utf-8";
-        $mail->setFrom("75124771@qq.com", "笨笨");
-        $mail->addAddress("375178773@qq.com", '蛋蛋');
-        $mail->addAddress("75124771@qq.com","haihui");
-        $mail->addReplyTo('75124771@qq.com', '笨笨');
+        $mail->setFrom("7512477*@qq.com", "笨笨");
+        $mail->addAddress("37517877*@qq.com", '蛋蛋');
+        $mail->addAddress("7512477*@qq.com","haihui");
+        $mail->addReplyTo('7512477*@qq.com', '笨笨');
         //判断文件是否存在,不存在说明没有去爬数据,并且没有生成excel文件
         if(!file_exists("file/SMZDM_".date('Y-m-d').".xlsx")){
             $do = new doPage();
